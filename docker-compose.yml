@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-login-app
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # For hot reloading in Docker
+    stdin_open: true  # Required for React to work correctly 
