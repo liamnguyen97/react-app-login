@@ -1,3 +1,5 @@
+
+
 # React Login Demo
 
 A simple React login application with Docker support. This application features a login form that accepts:
@@ -42,4 +44,6 @@ After entering the correct credentials, you will be redirected to the welcome pa
 ## Troubleshooting
 
 - If you encounter any issues with port 3000 being already in use, you can change the port mapping in `docker-compose.yml`
-- Make sure no other applications are running on port 3000 on your host machine 
+- Make sure no other applications are running on port 3000 on your host machine
+
+##### CICD already set up and running
